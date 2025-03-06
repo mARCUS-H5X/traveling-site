@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+
+<!------ Google Fonts ------>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Karla:wght@200;300;400;500&family=Montserrat+Alternates:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400;500&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+
+<!-- Bootstrap CSS-->	
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+<!--External JS-->
+<script src="script.js" async></script>
+
+</head>
+
+<!----External CSS----->
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<!-----FontAwsome------>
+<!--Filter Button-->
+<div class = "filter-btns">
+  <a href="index.html"><button type="button" class="filter-btn" id="refresh"><i class="fa-solid fa-rotate" ></i> Refresh</button></a>
+   
+  <button type = "button" class = "filter-btn" id = "all">all</button>
+  <button type = "button" class = "filter-btn" id = "new">TOKYO</button>
+  <button type = "button" class = "filter-btn" id = "office-wear">KYOTO</button>
+  <button type = "button" class = "filter-btn" id = "t-shirts">OSAKA</button>
+  <button type = "button" class = "filter-btn" id = "offers">CUSTOM</button>
+</div>
+
+
+<!--Product Cards-->
+<section id="product-cards">
+  <div class="container-fluid">
+    <div class="row row-cols-2 row-cols-md-4 g-4">
+      <div class=" col filter-item all new ">
+        <div class="card h-100">
+          <img src="images/1.webp" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Solo Escape" – Perfect for solo travelers seeking adventure and serenity.</h5>
+            <p class="card-text shop-item-price"> Rs 6990.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all new">
+        <div class="card h-100">
+          <img src="images/1.webp" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title shop-item-title">"Duo Getaway" – A special deal for couples or best friends exploring together.</h5>
+            <p class="card-text shop-item-price"> Rs 12790.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all new">
+        <div class="card h-100">
+          <img src="images/1.webp" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">"Family Voyage" – A fun-filled travel package for families to create lasting memories.</h5>
+            <p class="card-text shop-item-price"> Rs 17790.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all new">
+        <div class="card h-100">
+          <img src="images/1.webp" class="card-img-top shop-item-image " alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">"Squad Expedition" – The ultimate group deal for friends or teams traveling together.
+              </h5>
+            <p class="card-text shop-item-price"> Rs 10990.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all office-wear ">
+        <div class="card h-100">
+          <img src="images/2.webp" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Solo Escape" – Perfect for solo travelers seeking adventure and serenity.</h5>
+            <p class="card-text shop-item-price"> Rs 5990.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all office-wear">
+        <div class="card h-100">
+          <img src="images/2.webp" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">"Duo Getaway" – A special deal for couples or best friends exploring together.</h5>
+            <p class="card-text shop-item-price">Rs 9290.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class=" col filter-item all office-wear">
+        <div class="card h-100">
+          <img src="images/2.webp" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">"Family Voyage" – A fun-filled travel package for families to create lasting memories.</h5>
+            <p class="card-text shop-item-price">Rs 14290.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all office-wear">
+        <div class="card h-100">
+          <img src="images/2.webp" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">"Squad Expedition" – The ultimate group deal for friends or teams traveling together.</h5>
+            <p class="card-text shop-item-price">Rs 19690.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all t-shirts">
+        <div class="card h-100">
+          <img src="images/3.webp" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Solo Escape" – Perfect for solo travelers seeking adventure and serenity.</h5>
+            <p class="card-text shop-item-price">Rs 3450.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all t-shirts">
+        <div class="card h-100">
+          <img src="images/3.webp" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">"Duo Getaway" – A special deal for couples or best friends exploring together.</h5>
+            <p class="card-text shop-item-price">Rs 5500.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all t-shirts">
+        <div class="card h-100">
+          <img src="images/3.webp" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">"Family Voyage" – A fun-filled travel package for families to create lasting memories.</h5>
+            <p class="card-text shop-item-price">Rs 9990.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all t-shirts">
+        <div class="card h-100">
+          <img src="images/3.webp" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">"Squad Expedition" – The ultimate group deal for friends or teams traveling together.</h5>
+            <p class="card-text shop-item-price">Rs 17990.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all offers">
+        <div class="card h-100">
+          <img src="images/4.webp" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Solo Escape" – Perfect for solo travelers seeking adventure and serenity.</h5>
+            <p class="card-text shop-item-price">Rs 3690.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all offers">
+        <div class="card h-100">
+          <img src="images/4.webp" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">"Duo Getaway" – A special deal for couples or best friends exploring together.</h5>
+            <p class="card-text shop-item-price">Rs 5690.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping  " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all offers">
+        <div class="card h-100">
+          <img src="images/4.webp" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">"Family Voyage" – A fun-filled travel package for families to create lasting memories.</h5>
+            <p class="card-text shop-item-price">Rs 10690.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all offers">
+        <div class="card h-100">
+          <img src="images/4.webp" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">"Squad Expedition" – The ultimate group deal for friends or teams traveling together.</h5>
+            <p class="card-text shop-item-price">Rs 19690.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--Shopping Cart-->
+<section class="container content-section" id="shopping-cart">
+  
+  <h3 style="text-decoration: underline;text-align: center; margin-bottom: 7%;">Shopping Cart</h3>
+ 
+ <table class="table table-hover table-cart">
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Price</th>
+      <th>Quantity</th>
+    </tr>
+  </thead>
+  <tbody class="cart-items">
+    
+     
+  </tbody>
+</table>
+
+    <div class="cart-total"> 
+      <strong class="cart-total-title">Total</strong>
+      <span  class="cart-total-price" style="text-align: right;">$0</span>
+    </div>
+ 
+
+    <div class="btn-purchase" style="margin-top: 10%;">
+      <a href="file:///C:/Users/ambuj/OneDrive/Desktop/index.html"><button type="button"  class="btn btn-dark btn-purchase "><i class="fa-solid fa-cart-shopping " style="margin-right: 6%;"></i>PURCHASE</button></a>
+    </div>
+
+</section>
+ 
+<!--Footer-->
+<section id="footer">
+  <div class="card text-center">
+   
+    <div class="card-body">
+      <h3 class="card-title"><i class="fa-solid fa-gift" style="margin-right: 1%;"></i>AURA</h3>
+      <p>Thank You , Come Again !!!</p>
+    </div>
+    <div class="card-footer text-muted">
+       <p></p>
+       <p></p>
+    </div>
+  </div>
+</section>
+
+
+
+ 
+
+<!--External JS-->
+<script src="script.js"></script>
+
+</body>
+</html>
